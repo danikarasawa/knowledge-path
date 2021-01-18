@@ -8,7 +8,7 @@ Zed A. Shaw
 
 (págs. 255-291)
 
-<img height="50" align="right" src="./img/folder_terminal2.png?">
+<img height="50" align="right" src="./img/folder_terminal2.png">
 
 #### Comandos abordados:
 
