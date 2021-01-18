@@ -3,8 +3,8 @@
 Construção de trilha de conhecimento com time LTS
 ```
 ### Temas
-* Terminal
-* Git e GitHub
+* Terminal | 18/01/2021
+* Git e GitHub 
 * Lógica de Programação
 * Algoritmos
 * Estrutura de Dados

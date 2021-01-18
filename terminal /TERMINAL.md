@@ -7,7 +7,7 @@ Estudos baseados no livro:
 Zed A. Shaw 
 (págs. 255-291)
 ```
-<img src="./img/folder_terminal.png?" height="50">
+<img src="./img/folder_terminal2.png?" height="50">
 
 ### Comandos abordados
 
@@ -24,5 +24,6 @@ cp | copiar um arquivo ou diretório
 mv | mover um arquivo ou diretório
 less | paginar um arquivo
 open | abrir um arquivo
+clear | limpar o terminal 
 ```
 Mais informações em [clique aqui](https://www.oreilly.com/playlists/6b0ba469-d706-45a0-ae95-05560a7ef529/)
