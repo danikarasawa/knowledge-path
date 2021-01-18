@@ -7,7 +7,8 @@ Estudos baseados no livro:
 Zed A. Shaw 
 (págs. 255-291)
 ```
-<img src="./img/folder_terminal2.png?" height="50">
+
+<img height="50" align="right" src="./img/folder_terminal2.png?">
 
 ### Comandos abordados
 
