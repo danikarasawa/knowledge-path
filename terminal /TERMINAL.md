@@ -49,7 +49,9 @@ clear | limpar o terminal
 touch | cria um arquivo no diretório atual 
 touch <nome_do_dir>/<nome_do_arquivo> | cria um arquivo no diretório da árvore
 
-echo "texto_informado" > <nome_do_dir>/<nome_do_arquivo> | salva o conteúdo no arquivo informado
+echo "texto_informado" >> <nome_do_dir>/<nome_do_arquivo> | salva o conteúdo no arquivo informado
+
+curl https://linuxpocketguide.com/sample.pdf -o sample.pdf | baixar um arquivo sem estar com o navegador aberto
 ```
 Mais informações em [clique aqui](https://www.oreilly.com/playlists/6b0ba469-d706-45a0-ae95-05560a7ef529/)
 
