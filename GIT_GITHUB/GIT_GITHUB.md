@@ -10,9 +10,60 @@
 
 #### Assuntos abordados:
 
-* Entendendo o que é Git e Github
-* Configurando o Git
-* Essencial do Git
-* Repositórios Remotos
-* Ramificação (Branch)
-* Extras
+<b>Entendendo o que é Git e Github</b>
+
+<b>Configurando o Git</b>
+
+<b>Essencial do Git</b>
+- git status
+    - untracked | unmodified | modified | staged
+- git add <nome_do_arquivo> | git add . [inclui todos os arquivos modificados]
+- git commit -m "inserir uma mensagem com a ação que você fez para gerar este commit"
+- git log | histórico e hash do commit
+    - git log --decorate | Infos mais detalhadas
+    - git log --author="nome-da-pessoa"
+- git shortlog | mostra os autores e os commits feitos
+    - git shortlog -sn | quantidade de commits e o nome do author
+- git log --graph | mostra de forma gráfica o fluxo de commits, merges, etc
+
+- git show <hash> | mostra as informações do commit sob essa hash
+- git diff | mostra as alterações nos arquivos antes de realizar o commit. Serve para dar uma lida nas coisas feitas para se certificar do status de modificações.
+    - git diff --name-only | mostra apenas os nomes dos arquivos modificados, bom para grandes listas de arquivos modificados
+- git commit -am "mensagem para o novo commit" | -am serve para arquivos que já foram comitados anteriormente
+- git checkout <nome_do_arquivo> | volta o status do arquivo para a posição anterior da modificação, funciona antes de realizar git add 
+- git reset HEAD <nome_do_arquivo> | tira o arquivo do staged e assim é possível utilizar o git checkout também (caso seja necessário)
+    - git reset --soft | cancela o commit e deixa os arquivos em staged prontos para o novo commit
+    - git reset --mixed | cancela o commit e deixa os arquivos em modified prontos para o novo checkout, edit, commit
+    - git reset --hard | cancela o commit e deixa os arquivos zerados a partir da penúltima hash/commit
+[sempre utilizar a penúltima hash para fazer o reset, afinal você quer modificar a última hash e precisa estar um passo antes dela para isso]    
+
+<b>Repositórios Remotos</b>
+- chaves id_rsa | SSH 
+    -cd ~/.ssh/
+    - cat id_rsa.pub | pode-se utilizar também o more id_rsa.pub
+- git remote | mostra o repo conectado remotamente com a sua máquina local
+    - git remote -v | mostra todos os repos conectados  com a sua máquina local
+- git push -u origin <branch_original> | leva tudo da branch original para o origin (neste exemplo)
+- git clone <link_do_repo_no_github> | clona o repo inteiro na sua máquina de repos que você tem autorização para dar push 
+- FORK - faz uma cópia do projeto de outra pessoa e a partir dele você pode abrir um PR como sugestões de modificações
+
+<b>Ramificação (Branch)</b>
+- "É um ponteiro móvel que leva a um commit"
+- vantagens em utilizar uma branch:
+    - poder mofificar sem alterar o local principal (main)
+    - facilmente "desligável"
+    - múltiplas pessoas trabalhando
+    - evita conflitos
+- git checkout -b <nome_da_branch> | cria a branch conforme o nome escolhido por você
+- git branch | lista as branchs e coloca um * na frente do nome da branch que você está no momento 
+    - git branch -D <nome_da_branch> | apaga a branch anotada neste comando
+- git checkout <nome_da_branch> | muda para a branch anotada neste comando
+- git merge | cria-se um commit novo para juntar os commits realizados e deixá-los todos na mesma vertical
+    * pro: operação não destrutiva
+    * contra: commit extra e histórico poluído
+- git rebase | <i>fast foward</i> > pega um commit e o reposiciona na vertifical de forma linear. É preciso se preocupar com a sequência
+    * pro: evita commits extras e cria um histórico linear
+    * contra: perde a ordem cronológica das modificações, pode gerar conflitos 
+
+
+<b>Extras</b>
