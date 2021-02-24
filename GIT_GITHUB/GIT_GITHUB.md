@@ -13,7 +13,7 @@
 <b>Entendendo o que é Git e Github</b>
 
 <b>Configurando o Git</b>
-
+INCLUIR ACESSO DE USUÁRIO DO PC AQUI | REPROGRAMA
 <b>Essencial do Git</b>
 - git status
     - untracked | unmodified | modified | staged
@@ -36,6 +36,7 @@
     - git reset --mixed | cancela o commit e deixa os arquivos em modified prontos para o novo checkout, edit, commit
     - git reset --hard | cancela o commit e deixa os arquivos zerados a partir da penúltima hash/commit
 [sempre utilizar a penúltima hash para fazer o reset, afinal você quer modificar a última hash e precisa estar um passo antes dela para isso]    
+    - git revert <hash> | reverte a modificação, volta para o estado anterior do repo e mantém o commit, assim você pode consultar depois para atualizar o que foi feito
 
 <b>Repositórios Remotos</b>
 - chaves id_rsa | SSH 
@@ -54,16 +55,31 @@
     - facilmente "desligável"
     - múltiplas pessoas trabalhando
     - evita conflitos
-- git checkout -b <nome_da_branch> | cria a branch conforme o nome escolhido por você
+- git checkout -b <nome_da_branch> | cria a nova branch conforme o nome escolhido por você
 - git branch | lista as branchs e coloca um * na frente do nome da branch que você está no momento 
     - git branch -D <nome_da_branch> | apaga a branch anotada neste comando
 - git checkout <nome_da_branch> | muda para a branch anotada neste comando
-- git merge | cria-se um commit novo para juntar os commits realizados e deixá-los todos na mesma vertical
+- git merge | cria-se um commit novo para juntar os commits realizados e deixá-los todos na mesma vertical, de forma linear
     * pro: operação não destrutiva
     * contra: commit extra e histórico poluído
-- git rebase | <i>fast foward</i> > pega um commit e o reposiciona na vertifical de forma linear. É preciso se preocupar com a sequência
+- git rebase | <i>fast foward</i> > pega um commit e o reposiciona na frente da vertifical. É preciso se preocupar com a sequência
     * pro: evita commits extras e cria um histórico linear
     * contra: perde a ordem cronológica das modificações, pode gerar conflitos 
 
-
 <b>Extras</b>
+* gitignore: arquivos que ficam apenas no ambiente local e não devem ficar públicos no repo
+    <b>.gitignore</b> é o nome correto para a criação desse recurso
+    github/gitignore > tem os padrões de .gitignore para cada linguagem de programação, vale a pena consultar essa referência
+- git stash | guarda as modificações feitas em modo local 
+    - git stash apply | traz as modificações feitas de volta ao projeto
+    - git stash list | lista as modificações que estão guardadas
+    - git stash clear | limpa as modificações que estão guardadas
+* criar alias
+    - git config --global alias.s status | cria um alias que você quiser para o comando do github
+        * a partir do exemplo do alias (acima) o 'git status' passa a ser 'git s''
+* versionando tags | criação de versões dentro do repo 
+    - git tag -a 1.0.0 -m "escreva sua mensagem aqui" | para criar a nova tag
+    - git push origin master --tags | para subir a nova tag no repo    
+    - git tag | lista todas as tags existentes no repo
+    - git tag -D <nome_da_tag> | apaga de forma local a tag anotada neste comando
+        - git push origin : <nome_da_tag> | apaga a tag anotada neste comando dentro do repo
