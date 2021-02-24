@@ -13,7 +13,12 @@
 <b>Entendendo o que é Git e Github</b>
 
 <b>Configurando o Git</b>
-INCLUIR ACESSO DE USUÁRIO DO PC AQUI | REPROGRAMA
+- git config --list | verificar se há algum usuário logado na máquina
+    - git config --global user.name <user_name> | configurar email do github 
+    - git config --global user.email <user_email> | configurar a senha do github
+    - git config --global --unset-all user.name <user_name> | desconfigurar email do github
+    - git config --global --unset-all user.email <user_email> | desconfigurar email do github
+
 <b>Essencial do Git</b>
 - git status
     - untracked | unmodified | modified | staged
@@ -37,6 +42,9 @@ INCLUIR ACESSO DE USUÁRIO DO PC AQUI | REPROGRAMA
     - git reset --hard | cancela o commit e deixa os arquivos zerados a partir da penúltima hash/commit
 [sempre utilizar a penúltima hash para fazer o reset, afinal você quer modificar a última hash e precisa estar um passo antes dela para isso]    
     - git revert <hash> | reverte a modificação, volta para o estado anterior do repo e mantém o commit, assim você pode consultar depois para atualizar o que foi feito
+- git push origin <nome_da_branch> | envia o commit para o repo para, assim, criar a pull request 
+- git pull origin <nome_da_branch>| traz as alterações que estão na branch anotada neste comando 
+    - git pull | caso você esteja na branch que deseja trazer as alterações, basta usar este comando
 
 <b>Repositórios Remotos</b>
 - chaves id_rsa | SSH 
