@@ -6,6 +6,10 @@
 
 "Git e GitHub para Iniciantes" - [clique aqui](https://www.udemy.com/course/git-e-github-para-iniciantes/)
 
+"Treinamento BackEnd" - Mercado Livre + {reprograma} | 2019
+
+Dicas dos mentores <3
+
 <img height="50" align="right" src="./img/github.png">
 
 #### Assuntos abordados:
