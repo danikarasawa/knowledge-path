@@ -50,8 +50,9 @@
 - chaves id_rsa | SSH 
     -cd ~/.ssh/
     - cat id_rsa.pub | pode-se utilizar também o more id_rsa.pub
-- git remote | mostra o repo conectado remotamente com a sua máquina local
+- git remote | mostra a branch do repo conectado com a sua máquina local
     - git remote -v | mostra todos os repos conectados  com a sua máquina local
+    - git remote add upstream <link_do_repo_no_github> | faz a conexão remota com o repo que originou o seu FORK, importante para visualizar modificações no repo original 
 - git push -u origin <branch_original> | leva tudo da branch original para o origin (neste exemplo)
 - git clone <link_do_repo_no_github> | clona o repo inteiro na sua máquina de repos que você tem autorização para dar push 
 - FORK - faz uma cópia do projeto de outra pessoa e a partir dele você pode abrir um PR como sugestões de modificações

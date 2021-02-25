@@ -4,8 +4,8 @@ Construção de trilha de conhecimento com time LTS
 ```
 ### Temas
 * Terminal | 18/01/2021
-* Git e GitHub 
-* Lógica de Programação
+* Git e GitHub | 26/02/2021
+* Lógica de Programação | 12/03/2021 [previsão]
 * Algoritmos
 * Estrutura de Dados
 * Banco de Dados Relacional
