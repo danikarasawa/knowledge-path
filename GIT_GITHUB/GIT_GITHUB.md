@@ -32,6 +32,7 @@ MacBook > ```brew install tig``` | facilita a observação de informações sobr
     - untracked | unmodified | modified | staged
 - ```git add <nome_do_arquivo>``` | ```git add .``` [inclui todos os arquivos modificados]
 - ```git commit -m "inserir uma mensagem com a ação que você fez para gerar este commit"```
+    - ```git commit --amend``` | inclui novas alterações no que já está no commit anterior
 - ```git log``` | histórico e hash do commit
     - ```git log --decorate``` | Infos mais detalhadas
     - ```git log --author="nome_da_pessoa"```
