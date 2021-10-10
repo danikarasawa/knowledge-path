@@ -6,7 +6,7 @@
 
 Gustavo Guanabara 
 
-[Curso em Vídeo](https://www.cursoemvideo.com/curso/curso-de-algoritmo)
+[Curso em Vídeo](https://www.cursoemvideo.com/curso/curso-de-algoritmo?target=_blank)
 
 <img height="50" align="right" src="./img/curso-em-video.png">
 
@@ -14,6 +14,4 @@ Gustavo Guanabara
 
 Todas as respostas foram construídas utilizando o [Portugol Web](https://portugol-webstudio.cubos.io) e estão separados em arquivos únicos conforme o tema. Baixe os arquivos e importe a partir da IDE do Portugol Web aberta no seu navegador. 
 
-```
-relação de exercícios concluídos
-```
+Lista de exercícios -> [aqui](/exercicio-algoritmos.pdf?target=_blank")
