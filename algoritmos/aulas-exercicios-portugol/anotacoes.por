@@ -90,7 +90,10 @@ RELACIONAIS -> TODOS
 
 LOGICOS -> E OU NAO
 
+ESTRUTURA CONDICIONAIS - PARTE 1 
 
+condicional simples (se)
+condicional composta (se senao)
 
 
 

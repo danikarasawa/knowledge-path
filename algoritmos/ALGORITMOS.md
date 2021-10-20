@@ -2,13 +2,15 @@
 
 #### Estudos baseados em: 
 
-"Curso em Vídeo - Algoritmos"
+Digital Innovation One - bootcamp Java | <b>Vários professores</b>
 
-Gustavo Guanabara 
-
-[Curso em Vídeo](https://www.cursoemvideo.com/curso/curso-de-algoritmo?target=_blank)
-
+[Curso em Vídeo - Algoritmos](https://www.cursoemvideo.com/curso/curso-de-algoritmo?target=_blank) | <b>Gustavo Guanabara</b> 
+<br>
+<br>
+<img height="50" align="right" src="./img/digital-innovation-one.jpeg">
 <img height="50" align="right" src="./img/curso-em-video.png">
+<br>
+<br>
 
 #### Os exercícios estão em Portugol
 
